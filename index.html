@@ -8,7 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="css/main.css">
   <title>Curso Bootstrap</title>
 </head>
 
@@ -18,40 +18,96 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col">
-        <p class="lead">Hotel San Miguel</p>
-        Excelente
+      <div class="col-sm-4">
+        <p>
+        <h3>Como funciona?</h3>
+        <p>Elegis los hoteles que mas te gusten</p>
+        </p>
       </div>
-      <div class="col">
-        <p class="lead">Hotel Ciudad de la Costa</p>
-        Vistas al mar
+      <div class="col-sm-4">
+        <p>
+        <h3>Donde reservo?</h3>
+        <p>Elegi la ciudad que quieras y luego rellena nuestro formulario.</p>
+        </p>
       </div>
-      <div class="col">
-        <p class="lead">Hotel Goes</p>
-        Gran servicio
+      <div class="col-sm-4">
+        <p>
+        <h3>Como pago?</h3>
+        <p>Aceptamos todos los metodos de pago disponibles</p>
+        </p>
       </div>
     </div>
 
+    <div class="d-flex flex-wrap">
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Goes</h4>
+          <p>Hotel con gran servicio</p>
+        </div>
+        <div>
+          <button class="btn btn-reserva">Reserva!</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Ciudad de la Costa</h4>
+          <p>Hotel con vistas al mar</p>
+        </div>
+        <div>
+          <button class="btn btn-reserva">Reserva!</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Hotel</h4>
+          <p>Tremendo hotel</p>
+        </div>
+        <div>
+          <button class="btn btn-reserva">Reserva!</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.</p>
+        </div>
+        <div>
+          <button class="btn btn-reserva">Reserva!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
     <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-primary">Ver</button>
+      <div class="col-sm-4 d-flex flex-column">
+        <a href="https://www.twitter.com">Twitter</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="https://www.linkedin.com">Linkedin</a>
       </div>
-      <div class="col">
-        <button type="button" class="btn btn-primary">Ver</button>
+      <div class="col-sm-4">
+        <address>
+          <h3>Sede</h3>
+          Cerrito 852, Montevideo, Uruguay
+          <a href="mailto:arizaga.jm@gmail.com">arizaga.jm@gmail.com</a>
+        </address>
       </div>
-      <div class="col">
-        <button type="button" class="btn btn-primary">Ver</button>
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="#">Nosotros</a>
+        <a href="#">Precios</a>
+        <a href="#">Contacto</a>
       </div>
     </div>
-  </div>
-  </div>
 
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </footer>
 </body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </html>
