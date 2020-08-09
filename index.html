@@ -9,14 +9,42 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
   <title>Curso Bootstrap</title>
 </head>
 
 <body>
-  <div class="jumbotron">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Hoteles</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron bg-dark text-white">
     <h1 class="display-4">Hoteles</h1>
   </div>
   <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
     <div class="row">
       <div class="col-sm-4">
         <p>
@@ -80,7 +108,7 @@
     </div>
   </div>
 
-  <footer>
+  <footer class="footer bg-dark ">
     <div class="row">
       <div class="col-sm-4 d-flex flex-column">
         <a href="https://www.twitter.com">Twitter</a>
@@ -90,8 +118,9 @@
       <div class="col-sm-4">
         <address>
           <h3>Sede</h3>
-          Cerrito 852, Montevideo, Uruguay
-          <a href="mailto:arizaga.jm@gmail.com">arizaga.jm@gmail.com</a>
+          <p><span class="oi oi-home footer-address-icon"></span>Cerrito 852, Montevideo, Uruguay</p>
+          <p><span class="oi oi-phone footer-address-icon"></span>(+598) 92123456</p>
+          <p><span class="oi oi-inbox footer-address-icon"></span><a href="mailto:arizaga.jm@gmail.com">arizaga.jm@gmail.com</a></p>
         </address>
       </div>
       <div class="col-sm-4 d-flex flex-column align-items-end">
