@@ -22,13 +22,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">Nosotros</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="precios.html">Precios</a>
         </li>
         <li class="nav-item">
@@ -43,65 +43,71 @@
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Home</li>
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Precios</li>
       </ol>
     </nav>
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>¿Cómo funciona?</h3>
-        <p>Elegis los hoteles que mas te gusten</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>¿Donde reservo?</h3>
-        <p>Elegi la ciudad que quieras y luego rellena nuestro formulario.</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>¿Cómo pago?</h3>
-        <p>Aceptamos todos los metodos de pago disponibles</p>
-      </div>
-    </div>
 
-    <hr>
 
-    <div class="d-flex flex-wrap container-hoteles">
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Goes</h4>
-          <p>Hotel con gran servicio</p>
-        </div>
-        <div>
-          <button class="btn btn-reserva btn-dark bg-dark">Reserva!</button>
-        </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Ciudad de la Costa</h4>
-          <p>Hotel con vistas al mar</p>
-        </div>
-        <div>
-          <button class="btn btn-reserva btn-dark bg-dark">Reserva!</button>
-        </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Hotel</h4>
-          <p>Tremendo hotel</p>
-        </div>
-        <div>
-          <button class="btn btn-reserva btn-dark bg-dark">Reserva!</button>
-        </div>
-      </div>
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua.</p>
-        </div>
-        <div>
-          <button class="btn btn-reserva btn-dark bg-dark">Reserva!</button>
-        </div>
-      </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <th>Calidad</th>
+          <th>Goes</th>
+          <th>Lagomar</th>
+          <th>Carrasco</th>
+          <th>Lorem</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="oi oi-star"></span></td>
+            <td>$100</td>
+            <td>$200</td>
+            <td>$300</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td><span class="oi oi-star"></span>
+              <span class="oi oi-star"></span></td>
+            <td>$200</td>
+            <td>$300</td>
+            <td>$500</td>
+            <td>$450</td>
+          </tr>
+          <tr>
+            <td><span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span></td>
+            <td>$300</td>
+            <td>$400</td>
+            <td>$800</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td><span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+            </td>
+            <td>$400</td>
+            <td>$500</td>
+            <td>$900</td>
+            <td>$999</td>
+          </tr>
+          <tr>
+            <td><span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span></td>
+            <td>$500</td>
+            <td>$600</td>
+            <td>$1050</td>
+            <td>$9999</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -122,8 +128,8 @@
         </address>
       </div>
       <div class="d-flex flex-column align-items-end">
-        <a href="about.html">Nosotros</a>
-        <a href="precios.html">Precios</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Precios</a>
         <a href="contacto.html">Contacto</a>
       </div>
     </div>
