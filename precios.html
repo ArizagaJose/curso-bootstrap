@@ -15,7 +15,7 @@
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Hoteles</a>
+    <a class="navbar-brand" href="index.html">Hoteles</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -48,66 +48,133 @@
       </ol>
     </nav>
 
+    <ul class="nav nav-tabs" id="tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" id="tabla-tab" role="tab" href="#nav-tabla">Tabla</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" id="tarjetas-tab" role="tab" href="#nav-tarjetas">Tarjetas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" id="lorem-tab" role="tab" href="#nav-lorem">Lorem</a>
+      </li>
+    </ul>
 
+    <div class="tab-content" id="tabContent">
+      <div class="tab-pane fade show active" id="nav-tabla" role="tabpanel" aria-labelledby="tabla-tab">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <th>Calidad</th>
+              <th>Goes</th>
+              <th>Lagomar</th>
+              <th>Carrasco</th>
+              <th>Lorem</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="oi oi-star"></span></td>
+                <td>$100</td>
+                <td>$200</td>
+                <td>$300</td>
+                <td>$250</td>
+              </tr>
+              <tr>
+                <td><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span></td>
+                <td>$200</td>
+                <td>$300</td>
+                <td>$500</td>
+                <td>$450</td>
+              </tr>
+              <tr>
+                <td><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span></td>
+                <td>$300</td>
+                <td>$400</td>
+                <td>$800</td>
+                <td>$1000</td>
+              </tr>
+              <tr>
+                <td><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                </td>
+                <td>$400</td>
+                <td>$500</td>
+                <td>$900</td>
+                <td>$999</td>
+              </tr>
+              <tr>
+                <td><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span></td>
+                <td>$500</td>
+                <td>$600</td>
+                <td>$1050</td>
+                <td>$9999</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Visa Oro
+                </button>
+              </h5>
+            </div>
 
-    <div class="table-responsive">
-      <table class="table table-striped">
-        <thead class="thead-dark">
-          <th>Calidad</th>
-          <th>Goes</th>
-          <th>Lagomar</th>
-          <th>Carrasco</th>
-          <th>Lorem</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="oi oi-star"></span></td>
-            <td>$100</td>
-            <td>$200</td>
-            <td>$300</td>
-            <td>$250</td>
-          </tr>
-          <tr>
-            <td><span class="oi oi-star"></span>
-              <span class="oi oi-star"></span></td>
-            <td>$200</td>
-            <td>$300</td>
-            <td>$500</td>
-            <td>$450</td>
-          </tr>
-          <tr>
-            <td><span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span></td>
-            <td>$300</td>
-            <td>$400</td>
-            <td>$800</td>
-            <td>$1000</td>
-          </tr>
-          <tr>
-            <td><span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </td>
-            <td>$400</td>
-            <td>$500</td>
-            <td>$900</td>
-            <td>$999</td>
-          </tr>
-          <tr>
-            <td><span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span></td>
-            <td>$500</td>
-            <td>$600</td>
-            <td>$1050</td>
-            <td>$9999</td>
-          </tr>
-        </tbody>
-      </table>
+            <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                3 cuotas sin interes
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Visa Platino
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                6 cuotas sin interes
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Visa Black
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                12 cuotas sin interes y 10% de descuento en alquiler de auto
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-lorem" role="tabpanel" aria-labelledby="lorem-tab">
+        Lorem
+      </div>
     </div>
   </div>
 

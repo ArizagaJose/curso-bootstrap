@@ -7,23 +7,15 @@ footer {
     margin-top:30px;
 }
 
-.btn {
-    background-color: gray;
-    color: white
-}
-
-
 footer {
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 0px 10px;
     color: white;
-    margin-bottom: 0px;
-    margin-top: 10px;
 }
 
 .card-hotel {
     flex: 1 200px;
     margin-left: 10px;
-    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 .btn-reserva {

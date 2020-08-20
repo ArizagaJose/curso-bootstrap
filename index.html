@@ -46,18 +46,50 @@
         <li class="breadcrumb-item active" aria-current="page">Home</li>
       </ol>
     </nav>
+
+    <hr>
     <div class="row">
       <div class="col-sm-4">
-        <h3>¿Cómo funciona?</h3>
-        <p>Elegis los hoteles que mas te gusten</p>
+        <a class="btn btn-dark bg-dark" data-toggle="collapse" href="#MultiCollapse1" role="button"
+          aria-expanded="false" aria-controls="MultiCollapse1">¿Cómo funciona?
+        </a>
       </div>
       <div class="col-sm-4">
-        <h3>¿Dónde reservo?</h3>
-        <p>Elegi la ciudad que quieras y luego rellena nuestro formulario.</p>
+        <a class="btn btn-dark bg-dark" data-toggle="collapse" href="#MultiCollapse2" role="button"
+          aria-expanded="false" aria-controls="MultiCollapse2">¿Dónde reservo?
+        </a>
       </div>
       <div class="col-sm-4">
-        <h3>¿Cómo pago?</h3>
-        <p>Aceptamos todos los metodos de pago disponibles</p>
+        <a class="btn btn-dark bg-dark" data-toggle="collapse" href="#MultiCollapse3" role="button"
+          aria-expanded="false">¿Cómo pago?
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="MultiCollapse1">
+          <div class="card card-body">
+            <h3>¿Cómo funciona?</h3>
+            <p>Elegis los hoteles que mas te gusten.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="MultiCollapse2">
+          <div class="card card-body">
+            <h3>¿Dónde reservo?</h3>
+            <p>Elegi la ciudad que quieras y luego rellena nuestro formulario.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="collapse multi-collapse" id="MultiCollapse3">
+          <div class="card card-body">
+            <h3>¿Cómo pago?</h3>
+            <p>Aceptamos todos los metodos de pago disponibles.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -120,6 +152,43 @@
         </div>
       </div>
     </div>
+
+    <button style="margin-bottom: 10px;" type="button" class="btn bg-dark text-white" data-toggle="modal" data-target="#modalForm">
+      Contacto rapido
+    </button>
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="Contacto" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm-12">
+                  <label class="form" for="nombre">Nombre</label>
+                  <input class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-sm-12">
+                  <label class="form" for="comentario">Comentario</label>
+                  <input class="form-control" id="comentario" placeholder="">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrrar</button>
+            <button type="button" class="btn btn-success">Enviar!</button>
+          </div>
+        </div>
+      </div>
+    </div> 
   </div>
 
   <footer class="footer bg-dark">
@@ -144,6 +213,7 @@
         <a href="contacto.html">Contacto</a>
       </div>
     </div>
+
   </footer>
 </body>
 
